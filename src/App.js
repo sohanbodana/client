@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import Home from "./componentt/Pages/home";
@@ -154,7 +154,6 @@ const App = () => {
   };
 
   return (
-    <Router>
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -187,15 +186,14 @@ const App = () => {
           <Route path="/confirmation" element={<BookingConfirmation />} />
         </Routes>
         <Footer />
-      </div>
         <ThemeProvider theme={theme} >
           <ChatBot
             headerTitle="Welcome User"
             steps={steps}
             {...config}
-          />
+            />
         </ThemeProvider>
-    </Router>
+            </div>
   );
 };
 
