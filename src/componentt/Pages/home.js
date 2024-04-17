@@ -113,7 +113,7 @@ const Home = () => {
 
                     <i className="ri-store-line"></i>
                     <h3 id="targetSection">Search Flights</h3>
-                    <a href="#targetSection" className="btn btn-success">Go Serach</a>
+                    <a href="/" className="btn btn-success">Go Serach</a>
 
                   </div>
                 </div>
